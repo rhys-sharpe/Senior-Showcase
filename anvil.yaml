@@ -3,15 +3,25 @@ db_schema:
   project:
     client: none
     columns:
-    - admin_ui: {order: 0, width: 200}
-      name: id
-      type: number
     - admin_ui: {order: 1, width: 200}
       name: title
       type: string
     - admin_ui: {order: 2, width: 200}
       name: desc
       type: string
+    - admin_ui: {order: 3, width: 200}
+      name: status
+      target: status
+      type: link_single
+    - admin_ui: {order: 4, width: 200}
+      name: created
+      type: date
+    - admin_ui: {order: 5, width: 200}
+      name: open
+      type: bool
+    - admin_ui: {order: 0, width: 115}
+      name: id
+      type: number
     server: full
     title: Project
   status:
