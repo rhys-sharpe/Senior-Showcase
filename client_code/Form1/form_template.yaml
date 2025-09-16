@@ -1,5 +1,42 @@
 components:
-- components: []
+- components:
+  - components:
+    - layout_properties: {grid_position: 'YJNTAU,SVVXCT'}
+      name: label_2
+      properties: {bold: true, text: Add a New Project}
+      type: Label
+    - layout_properties: {grid_position: 'EONDDK,ZNNRYF'}
+      name: label_3
+      properties: {italic: true, text: 'Project Title:'}
+      type: Label
+    - layout_properties: {grid_position: 'WEDKRS,YGVDYC'}
+      name: title
+      properties: {placeholder: Enter a creative title for your project, role: outlined}
+      type: TextBox
+    - layout_properties: {grid_position: ',undefined'}
+      name: label_5
+      properties: {italic: true, text: 'Project Description:'}
+      type: Label
+    - layout_properties: {grid_position: 'VQXVTT,MSXYTS'}
+      name: outlined_2
+      properties:
+        margin: [null, null, null, 0]
+        placeholder: Enter a short summary of the project
+        role: outlined
+      type: TextBox
+    - layout_properties: {grid_position: 'FJOKAJ,TTNAXX'}
+      name: label_4
+      properties: {italic: true, text: 'Current Status:'}
+      type: Label
+    - layout_properties: {grid_position: ''}
+      name: drop_down_2
+      properties:
+        items: [Proposal, Approved, In Progress, Complete]
+      type: DropDown
+    layout_properties: {grid_position: 'QWJWVK,TTAZHN'}
+    name: outlined_card_1
+    properties: {role: outlined-card}
+    type: ColumnPanel
   layout_properties: {slot: default}
   name: content_panel
   properties: {col_widths: '{}'}
@@ -8,6 +45,10 @@ components:
   name: navbar_links
   properties: {}
   type: FlowPanel
+- layout_properties: {slot: title}
+  name: label_1
+  properties: {}
+  type: Label
 container:
   properties: {html: '@theme:standard-page.html'}
   type: HtmlTemplate

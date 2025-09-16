@@ -1,4 +1,27 @@
 allow_embedding: false
+db_schema:
+  project:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: id
+      type: number
+    - admin_ui: {order: 1, width: 200}
+      name: title
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      name: desc
+      type: string
+    server: full
+    title: Project
+  status:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: status
+      type: string
+    server: full
+    title: Status
 dependencies: []
 name: Senior Showcase
 package_name: Senior_Showcase
