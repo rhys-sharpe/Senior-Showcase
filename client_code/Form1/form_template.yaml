@@ -13,12 +13,12 @@ components:
       name: title
       properties: {placeholder: Enter a creative title for your project, role: outlined}
       type: TextBox
-    - layout_properties: {grid_position: ',undefined'}
+    - layout_properties: {grid_position: ''}
       name: label_5
       properties: {italic: true, text: 'Project Description:'}
       type: Label
     - layout_properties: {grid_position: 'VQXVTT,MSXYTS'}
-      name: outlined_2
+      name: desc
       properties:
         margin: [null, null, null, 0]
         placeholder: Enter a short summary of the project
@@ -28,11 +28,16 @@ components:
       name: label_4
       properties: {italic: true, text: 'Current Status:'}
       type: Label
-    - layout_properties: {grid_position: ''}
+    - layout_properties: {grid_position: 'GQWCGB,CAEICS'}
       name: drop_down_2
       properties:
         items: [Proposal, Approved, In Progress, Complete]
       type: DropDown
+    - event_bindings: {click: submit_click}
+      layout_properties: {grid_position: 'GYKIOR,GXEDBM'}
+      name: submit
+      properties: {text: Submit Project}
+      type: Button
     layout_properties: {grid_position: 'QWJWVK,TTAZHN'}
     name: outlined_card_1
     properties: {role: outlined-card}
